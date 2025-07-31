@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form action="/students/create" method="post">
+        <h2>Create an entry in database</h2>
+        <label for="sid">Enter sid</label><br>
+        <input type="text" name="sid" id="sid" required> <br>
+        <label for="name">Enter name</label><br>
+        <input type="text" name="name" id="name" required> <br>
+        <label for="age">Enter age</label><br>
+        <input type="text" name="age" id="age" required> <br> <br>
+        <button type="submit">Create</button> <br>
+    </form>
+</body>
+</html>

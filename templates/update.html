@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Student</h2>
+    <form action="/students/update/{{student.id}}" method="post">
+        <label>New name:</label><br>
+        <input type="text" name="name" value="{{student.name}}"><br>
+        <label>New age:</label><br>
+        <input type="number" name="age" value="{{student.age}}"><br><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
